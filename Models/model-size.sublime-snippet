@@ -16,7 +16,7 @@
 -->
 <snippet>
    <content><![CDATA[
-size: 24,
+size: ${1:24},
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
    <tabTrigger>model-size</tabTrigger> 

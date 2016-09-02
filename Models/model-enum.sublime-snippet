@@ -17,10 +17,10 @@
 <snippet>
    <content><![CDATA[
 $1: {
-            type: 'string',
-            enum: ['female', 'male'],
-            defaultsTo: 'female'
-        }
+        type: 'string',
+        enum: ['${2:female}','${3:male}'],
+        defaultsTo: '${4:female}'
+    }
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
    <tabTrigger>model-emun</tabTrigger> 

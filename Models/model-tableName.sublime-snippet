@@ -16,7 +16,7 @@
 -->
 <snippet>
    <content><![CDATA[
-tableName: 'our_users',
+tableName: '${1:our_users}',
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
    <tabTrigger>model-tableName</tabTrigger> 

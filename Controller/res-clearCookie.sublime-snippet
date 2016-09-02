@@ -16,11 +16,11 @@
 -->
 <snippet>
    <content><![CDATA[
-columnName: '${1:number_of_round_rotating_things}',
+res.clearCookie('name', { path: '/admin' });
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-   <tabTrigger>model-columnName</tabTrigger> 
+   <tabTrigger>res-clearCookie</tabTrigger> 
    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>Sails Model Attributes Options</description>
+    <description>Sails Response</description>
 </snippet>

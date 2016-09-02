@@ -16,7 +16,7 @@
 -->
 <snippet>
    <content><![CDATA[
-defaultsTo:$1,
+defaultsTo:'${1:111-aaa}',
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
    <tabTrigger>model-defaultsTo</tabTrigger> 

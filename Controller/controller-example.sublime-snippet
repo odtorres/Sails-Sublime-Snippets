@@ -16,11 +16,18 @@
 -->
 <snippet>
    <content><![CDATA[
-columnName: '${1:number_of_round_rotating_things}',
+module.exports = {
+  hi: function (req, res) {
+    return res.send("Hi there!");
+  },
+  bye: function (req, res) {
+    return res.redirect("http://www.sayonara.com");
+  }
+};
 ]]></content>
    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-   <tabTrigger>model-columnName</tabTrigger> 
+   <tabTrigger>controller-example</tabTrigger> 
    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>Sails Model Attributes Options</description>
+    <description>Sails Controllers</description>
 </snippet>
