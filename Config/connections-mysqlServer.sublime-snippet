@@ -1,0 +1,38 @@
+<!--
+   Sails Sublime Text Snippets by Oscar Daniel Torres Hdez <odtorres@uci.cu>
+   Copyright (C) 2015 Oscar Daniel Torres Hdez.
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<snippet>
+   <content><![CDATA[  
+  // MySQL is the world's most popular relational database.
+  // http://en.wikipedia.org/wiki/MySQL
+  //
+  // Run:
+  // npm install sails-mysql
+  //
+  someMysqlServer: {
+    adapter: 'sails-mysql',
+    host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
+    user: 'YOUR_MYSQL_USER',
+    password: 'YOUR_MYSQL_PASSWORD',
+    database: 'YOUR_MYSQL_DB'
+  }
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>config-connections-mysqlServer</tabTrigger> 
+   <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Sails Config</description>
+</snippet>

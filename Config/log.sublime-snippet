@@ -1,0 +1,53 @@
+<!--
+   Sails Sublime Text Snippets by Oscar Daniel Torres Hdez <odtorres@uci.cu>
+   Copyright (C) 2015 Oscar Daniel Torres Hdez.
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<snippet>
+   <content><![CDATA[
+/**
+ * Built-in Log Configuration
+ * (sails.config.log)
+ *
+ * Configure the log level for your app, as well as the transport
+ * (Underneath the covers, Sails uses Winston for logging, which
+ * allows for some pretty neat custom transports/adapters for log messages)
+ *
+ * For more information on the Sails logger, check out:
+ * http://sailsjs.org/documentation/reference/configuration/sails-config-log
+ */
+
+module.exports = {
+
+  // Valid `level` configs:
+  // i.e. the minimum log level to capture with sails.log.*()
+  //
+  // 'error'    : Display calls to `.error()`
+  // 'warn'    : Display calls from `.error()` to `.warn()`
+  // 'debug'    : Display calls from `.error()`, `.warn()` to `.debug()`
+  // 'info'    : Display calls from `.error()`, `.warn()`, `.debug()` to `.info()`
+  // 'verbose': Display calls from `.error()`, `.warn()`, `.debug()`, `.info()` to `.verbose()`
+  //
+  log: {
+    level: 'info'
+  }
+
+};
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>config-log</tabTrigger> 
+   <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Sails Config</description>
+</snippet>

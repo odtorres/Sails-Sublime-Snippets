@@ -1,0 +1,42 @@
+<!--
+   Sails Sublime Text Snippets by Oscar Daniel Torres Hdez <odtorres@uci.cu>
+   Copyright (C) 2015 Oscar Daniel Torres Hdez.
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<snippet>
+   <content><![CDATA[
+/**
+ * Bootstrap
+ * (sails.config.bootstrap)
+ *
+ * An asynchronous bootstrap function that runs before your Sails app gets lifted.
+ * This gives you an opportunity to set up your data model, run jobs, or perform some special logic.
+ *
+ * For more information on bootstrapping your app, check out:
+ * http://sailsjs.org/documentation/reference/configuration/sails-config-bootstrap
+ */
+
+module.exports.bootstrap = function(cb) {
+
+  // It's very important to trigger this callback method when you are finished
+  // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
+  cb();
+};
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>config-bootstrap</tabTrigger> 
+   <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Sails Config</description>
+</snippet>
