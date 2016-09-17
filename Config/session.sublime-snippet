@@ -1,0 +1,91 @@
+<!--
+   Sails Sublime Text Snippets by Oscar Daniel Torres Hdez <odtorres@uci.cu>
+   Copyright (C) 2015 Oscar Daniel Torres Hdez.
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<snippet>
+   <content><![CDATA[
+/**
+ * Session Configuration
+ * (sails.config.session)
+ *
+ * Sails session integration leans heavily on the great work already done by
+ * Express, but also unifies Socket.io with the Connect session store. It uses
+ * Connect's cookie parser to normalize configuration differences between Express
+ * and Socket.io and hooks into Sails' middleware interpreter to allow you to access
+ * and auto-save to `req.session` with Socket.io the same way you would with Express.
+ *
+ * For more information on configuring the session, check out:
+ * http://sailsjs.org/documentation/reference/configuration/sails-config-session
+ */
+
+module.exports.session = {
+
+  // Session secret is automatically generated when your new app is created
+  // Replace at your own risk in production-- you will invalidate the cookies of your users,
+  // forcing them to log in again.
+  secret: 'cdf93c72c05f104f6183613e2f8262c2',
+
+
+  // Set the session cookie expire time
+  // The maxAge is set by milliseconds, the example below is for 24 hours
+  //
+  // cookie: {
+  //   maxAge: 24 * 60 * 60 * 1000
+  // }
+
+
+  // In production, uncomment the following lines to set up a shared redis session store
+  // that can be shared across multiple Sails.js servers
+  // adapter: 'redis',
+  //
+  // The following values are optional, if no options are set a redis instance running
+  // on localhost is expected.
+  // Read more about options at: https://github.com/visionmedia/connect-redis
+  //
+  // host: 'localhost',
+  // port: 6379,
+  // ttl: <redis session TTL in seconds>,
+  // db: 0,
+  // pass: <redis auth password>
+  // prefix: 'sess:'
+
+
+  // Uncomment the following lines to use your Mongo adapter as a session store
+  // adapter: 'mongo',
+  //
+  // host: 'localhost',
+  // port: 27017,
+  // db: 'sails',
+  // collection: 'sessions',
+  //
+  // Optional Values:
+  //
+  // # Note: url will override other connection settings
+  // url: 'mongodb://user:pass@host:port/database/collection',
+  //
+  // username: '',
+  // password: '',
+  // auto_reconnect: false,
+  // ssl: false,
+  // stringify: true
+
+};
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>config-session</tabTrigger> 
+   <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Sails Config</description>
+</snippet>
